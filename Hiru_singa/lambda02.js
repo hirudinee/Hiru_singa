@@ -16,7 +16,7 @@ exports.handler = function (event, context, callback) {
 		} else {
 			//your logic goes here
 			console.log('data : ', data);
-			callback(null, 'Successfully executed');
+			callback(null, data);
 		}
 	});
 
