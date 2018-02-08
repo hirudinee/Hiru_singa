@@ -7,7 +7,10 @@ exports.handler = function (event, context, callback) {
 		ExpressionAttributeValues: {
 			':name': 'Hiru'
 		},
-		FilterExpression: 'Name = :name'
+		FilterExpression: 'name01 = :name',
+		ExpressionAttributeNames: {
+    "#name01": "Name"
+  }
 	}, function (err, data) {
 		if (err) {
 			//handle error
