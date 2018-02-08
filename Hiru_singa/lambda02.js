@@ -7,7 +7,7 @@ exports.handler = function (event, context, callback) {
 		ExpressionAttributeValues: {
 			':name': 'Hiru'
 		},
-		FilterExpression: 'name01 = :name',
+		FilterExpression: '#name01 = :name',
 		ExpressionAttributeNames: {
     "#name01": "Name"
   }
