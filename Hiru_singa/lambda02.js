@@ -9,8 +9,8 @@ exports.handler = function (event, context, callback) {
 		},
 		FilterExpression: '#name01 = :name',
 		ExpressionAttributeNames: {
-    "#name01": "Name"
-  }
+     		"#name01": "Name"
+		}
 	}, function (err, data) {
 		if (err) {
 			//handle error
